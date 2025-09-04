@@ -5,8 +5,8 @@
   font-size: 62.5%; /* fz62.5p -> 10px -> 1rem */
 
   --main-color: #3189ff;
-  --main-color: rgba(49, 137, 255, 0.3);
-  --main-color: #0069f3;
+  --main-light: rgba(49, 137, 255, 0.3);
+  --main-dark: #0069f3;
   --title-color: #222;
   --text-color: #555;
   --black10: rgba(0, 0, 0, 0.1);
@@ -123,4 +123,29 @@ body {
     transform: scale(1);
     filter: blur(0);
   }
+}
+
+/* 반응형 디자인 */
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .inner {
+    width: 968px;
+    width: 94.5313%;
+  }
+}
+
+.header nav {
+  height: 10rem;
+}
+
+.gnb {
+  display: none;
+}
+
+.btn-menu {
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  background: url(../img/logo!!\\(1\)) no-repeat 50% 50%;
 }

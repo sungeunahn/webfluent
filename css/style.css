@@ -49,6 +49,7 @@
   color: #fff;
 
   width: 69rem;
+  width: 58.4746%;
 }
 
 .visual-title h2 {
@@ -111,6 +112,8 @@ main > section + section:last-child {
   /* fx1-1-a */
   flex: 1 1 auto;
   width: 28rem;
+  width: 23.7288%;
+
   height: 30.2rem;
   padding: 2.8rem 3.2rem;
   /* bxsh */
@@ -124,6 +127,7 @@ main > section + section:last-child {
   line-height: 1.3;
   color: var(--main-dark);
 }
+
 .business-list li dl dd {
   font-weight: 500;
   line-height: 1.5;
@@ -176,6 +180,9 @@ main > section + section:last-child {
   font-weight: 500;
   font-size: 2.4rem;
   text-align: center;
+
+  /* background: pink; */
+  width: 90%;
 }
 
 .works-list li p strong {
@@ -192,10 +199,12 @@ main > section + section:last-child {
 .news-con {
   display: flex;
   gap: 6rem;
+  gap: 5.0847%;
 }
 
 .news-con .news-text {
   width: 48rem;
+  width: 48.678%;
 
   display: flex;
   flex-direction: column;
@@ -216,6 +225,32 @@ main > section + section:last-child {
 
 .news-con figure {
   width: 64rem;
+  width: 54.2373%;
+}
+
+/* footer */
+.footer {
+  background: #333;
+  color: var(--white60);
+  padding: 5.2rem 0;
+}
+
+.foot-con {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; /* fxdrr */
+}
+
+.foot-text {
+  /* fw700+fz1.4r+lh1.5 */
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.foot-text p + p {
+  /* mt.8r */
+  margin-top: 0.8rem;
 }
 
 /* column */
@@ -252,28 +287,41 @@ main > section + section:last-child {
   display: block;
   font-weight: 700;
 }
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .hero {
+    height: 64rem;
+  }
 
-/* footer */
-.footer {
-  background: #333;
-  color: var(--white60);
-  padding: 5.2rem 0;
+  .visual-title {
+    width: 46rem;
+    width: 47.5207%;
+  }
+}
+.business-list {
+  flex-wrap: wrap;
 }
 
-.foot-con {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse; /* fxdrr */
+.business-list li {
+  width: 47.4rem;
+  width: 48.9669%;
+
+  height: 28rem;
 }
 
-.foot-text {
-  /* fw700+fz1.4r+lh1.5 */
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.5;
+.nesw-con {
+  gap: 2rem;
+}
+.nesw-con .nesww-text {
+  width: 47.4rem;
+  width: 48.9669%;
 }
 
-.foot-text p + p {
-  /* mt.8r */
-  margin-top: 0.8rem;
+.news-con figure {
+  width: 47.4rem;
+  width: 48.9669%;
+}
+
+.column h5 + p {
+  column-count: 1;
 }
